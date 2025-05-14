@@ -1,0 +1,5 @@
+<nodes>
+    <node id="start" x="0.0" y="0.0" type="priority"/>
+    <node id="junction" x="300.0" y="0.0" type="priority"/>
+    <node id="end" x="600.0" y="0.0" type="priority"/>
+</nodes>

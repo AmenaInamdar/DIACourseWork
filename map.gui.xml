@@ -1,0 +1,8 @@
+<viewsettings>
+    <viewport zoom="200" x="0" y="0"/>
+    <scheme name="real world"/>
+    <delay value="100"/>
+    <tracking>
+        <track object="ego" type="vehicle" zoom="200"/>
+    </tracking>
+</viewsettings>

@@ -1,0 +1,21 @@
+<configuration>
+    <input>
+        <net-file value="highway.net.xml"/>
+        <route-files value="highway.rou.xml"/>
+
+    </input>
+
+    <time>
+        <begin value="0"/>
+        <end value="200"/>
+        <step-length value="0.1"/>
+    </time>
+
+    <gui_only>
+        <start value="true"/>
+        <delay value="100"/>
+        <gui-settings-file value="map.gui.xml"/>
+    </gui_only>
+
+
+</configuration>

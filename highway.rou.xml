@@ -1,0 +1,82 @@
+<routes>
+    <!-- Vehicle types -->
+    <vType id="car" accel="2.5" decel="4.5" length="5" minGap="2.5" maxSpeed="15" sigma="0.5" guiShape="passenger"/>
+    <vType id="cone" accel="0.1" decel="0.1" length="1.5" width="1.2" minGap="0" maxSpeed="0.1" guiShape="passenger"/>
+    <vType id="pedestrian" vClass="pedestrian" accel="1" decel="0.1" speedDev="0.1" length="2" minGap="0.5" maxSpeed="1.5" guiShape="pedestrian"/>
+
+    <!-- Routes -->
+    <route id="route0" edges="start_to_junction junction_to_end"/>
+    <route id="route1" edges="end_to_junction junction_to_start"/>
+
+    <!-- Cars behind ego -->
+    <vehicle id="rear1" type="car" route="route0" depart="2.0" departPos="20" departLane="0" color="0,0,1"><param key="speedFactor" value="0.25"/></vehicle>
+    <vehicle id="rear2" type="car" route="route0" depart="2.1" departPos="25" departLane="1" color="0,0,1"><param key="speedFactor" value="0.3"/></vehicle>
+    <vehicle id="rear3" type="car" route="route0" depart="2.2" departPos="30" departLane="2" color="0,0,1"><param key="speedFactor" value="0.35"/></vehicle>
+    <vehicle id="rear4" type="car" route="route0" depart="2.3" departPos="35" departLane="1" color="0,0,1"><param key="speedFactor" value="0.3"/></vehicle>
+    <vehicle id="rear5" type="car" route="route0" depart="2.4" departPos="40" departLane="0" color="0,0,1"><param key="speedFactor" value="0.4"/></vehicle>
+    <vehicle id="rear6" type="car" route="route0" depart="2.5" departPos="45" departLane="2" color="0,0,1"><param key="speedFactor" value="0.4"/></vehicle>
+    <vehicle id="rear7" type="car" route="route0" depart="2.6" departPos="50" departLane="1" color="0,0,1"><param key="speedFactor" value="0.35"/></vehicle>
+    <vehicle id="rear8" type="car" route="route0" depart="2.7" departPos="55" departLane="0" color="0,0,1"><param key="speedFactor" value="0.3"/></vehicle>
+    <vehicle id="rear9" type="car" route="route0" depart="2.8" departPos="60" departLane="2" color="0,0,1"><param key="speedFactor" value="0.3"/></vehicle>
+    <vehicle id="rear10" type="car" route="route0" depart="2.9" departPos="65" departLane="1" color="0,0,1"><param key="speedFactor" value="0.4"/></vehicle>
+    <vehicle id="rear11" type="car" route="route0" depart="3.0" departPos="70" departLane="0" color="0,0,1"><param key="speedFactor" value="0.35"/></vehicle>
+    <vehicle id="rear12" type="car" route="route0" depart="3.1" departPos="75" departLane="2" color="0,0,1"><param key="speedFactor" value="0.25"/></vehicle>
+    <vehicle id="rear13" type="car" route="route0" depart="3.2" departPos="80" departLane="1" color="0,0,1"><param key="speedFactor" value="0.3"/></vehicle>
+    <vehicle id="rear14" type="car" route="route0" depart="3.3" departPos="85" departLane="0" color="0,0,1"><param key="speedFactor" value="0.35"/></vehicle>
+    <vehicle id="rear15" type="car" route="route0" depart="3.4" departPos="90" departLane="2" color="0,0,1"><param key="speedFactor" value="0.4"/></vehicle>
+
+    <!-- Ego car -->
+    <vehicle id="ego" type="car" route="route0" depart="5.0" departPos="0" departLane="1" departSpeed="random" color="1,0,0"/>
+
+    <!-- Cars in front of ego -->
+    <vehicle id="block1" type="car" route="route0" depart="6.0"  departPos="20"  departLane="2" color="0,0,1"><param key="speedFactor" value="0.3"/></vehicle>
+    <vehicle id="block2" type="car" route="route0" depart="6.1"  departPos="40"  departLane="0" color="0,0,1"><param key="speedFactor" value="0.35"/></vehicle>
+    <vehicle id="block3" type="car" route="route0" depart="6.2"  departPos="60"  departLane="1" color="0,0,1"><param key="speedFactor" value="0.4"/></vehicle>
+    <vehicle id="block4" type="car" route="route0" depart="6.3"  departPos="80"  departLane="2" color="0,0,1"><param key="speedFactor" value="0.3"/></vehicle>
+    <vehicle id="block5" type="car" route="route0" depart="6.4"  departPos="100" departLane="0" color="0,0,1"><param key="speedFactor" value="0.25"/></vehicle>
+    <vehicle id="block6" type="car" route="route0" depart="6.5"  departPos="120" departLane="1" color="0,0,1"><param key="speedFactor" value="0.3"/></vehicle>
+    <vehicle id="block7" type="car" route="route0" depart="6.6"  departPos="140" departLane="2" color="0,0,1"><param key="speedFactor" value="0.2"/></vehicle>
+    <vehicle id="block8" type="car" route="route0" depart="6.7"  departPos="160" departLane="1" color="0,0,1"><param key="speedFactor" value="0.3"/></vehicle>
+    <vehicle id="block9" type="car" route="route0" depart="6.8"  departPos="180" departLane="0" color="0,0,1"><param key="speedFactor" value="0.4"/></vehicle>
+    <vehicle id="block10" type="car" route="route0" depart="6.9"  departPos="200" departLane="2" color="0,0,1"><param key="speedFactor" value="0.25"/></vehicle>
+    <vehicle id="block11" type="car" route="route0" depart="7.0"  departPos="220" departLane="1" color="0,0,1"><param key="speedFactor" value="0.3"/></vehicle>
+    <vehicle id="block12" type="car" route="route0" depart="7.1"  departPos="240" departLane="0" color="0,0,1"><param key="speedFactor" value="0.3"/></vehicle>
+    <vehicle id="block13" type="car" route="route0" depart="7.2"  departPos="260" departLane="1" color="0,0,1"><param key="speedFactor" value="0.35"/></vehicle>
+    <vehicle id="block14" type="car" route="route0" depart="7.3"  departPos="280" departLane="2" color="0,0,1"><param key="speedFactor" value="0.25"/></vehicle>
+    <vehicle id="block15" type="car" route="route0" depart="7.4"  departPos="300" departLane="1" color="0,0,1"><param key="speedFactor" value="0.3"/></vehicle>
+
+    <!-- Cones -->
+    <vehicle id="cone1" type="cone" route="route0" depart="8.0" departPos="150" departLane="1" color="1,0.5,0"/>
+    <vehicle id="cone2" type="cone" route="route0" depart="8.1" departPos="250" departLane="2" color="1,0.3,0"/>
+
+    <!-- Pedestrians -->
+    <person id="ped1" depart="10.0" color="0.2,0.2,0.2"><walk edges="start_to_junction junction_to_end"/></person>
+    <person id="ped2" depart="12.0" color="0.1,0.1,0.1"><walk edges="end_to_junction junction_to_start"/></person>
+
+    <!-- Background traffic -->
+    <vehicle id="fcar1" type="car" route="route0" depart="15" departLane="random" departSpeed="random"/>
+    <vehicle id="fcar2" type="car" route="route0" depart="20" departLane="random" departSpeed="random"/>
+    <vehicle id="fcar3" type="car" route="route0" depart="25" departLane="random" departSpeed="random"/>
+    <vehicle id="fcar4" type="car" route="route0" depart="30" departLane="random" departSpeed="random"/>
+    <vehicle id="fcar5" type="car" route="route0" depart="35" departLane="random" departSpeed="random"/>
+    <vehicle id="fcar6" type="car" route="route0" depart="40" departLane="random" departSpeed="random"/>
+    <vehicle id="fcar7" type="car" route="route0" depart="45" departLane="random" departSpeed="random"/>
+    <vehicle id="fcar8" type="car" route="route0" depart="50" departLane="random" departSpeed="random"/>
+    <vehicle id="fcar9" type="car" route="route0" depart="55" departLane="random" departSpeed="random"/>
+    <vehicle id="fcar10" type="car" route="route0" depart="60" departLane="random" departSpeed="random"/>
+    <vehicle id="bcar1" type="car" route="route1" depart="65" departLane="random" departSpeed="random"/>
+    <vehicle id="bcar2" type="car" route="route1" depart="70" departLane="random" departSpeed="random"/>
+    <vehicle id="bcar3" type="car" route="route1" depart="75" departLane="random" departSpeed="random"/>
+    <vehicle id="bcar4" type="car" route="route1" depart="80" departLane="random" departSpeed="random"/>
+    <vehicle id="bcar5" type="car" route="route1" depart="85" departLane="random" departSpeed="random"/>
+    <vehicle id="bcar6" type="car" route="route1" depart="90" departLane="random" departSpeed="random"/>
+    <vehicle id="bcar7" type="car" route="route1" depart="95" departLane="random" departSpeed="random"/>
+    <vehicle id="bcar8" type="car" route="route1" depart="100" departLane="random" departSpeed="random"/>
+    <vehicle id="bcar9" type="car" route="route1" depart="105" departLane="random" departSpeed="random"/>
+    <vehicle id="bcar10" type="car" route="route1" depart="110" departLane="random" departSpeed="random"/>
+
+    <!-- Person Flow -->
+    <personFlow id="ped_flow" begin="25" end="1000" number="20" departPos="random" departSpeed="1.2">
+        <walk edges="start_to_junction junction_to_end"/>
+    </personFlow>
+</routes>

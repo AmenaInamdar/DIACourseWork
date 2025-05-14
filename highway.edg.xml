@@ -1,0 +1,6 @@
+<edges>
+    <edge id="start_to_junction" from="start" to="junction" numLanes="3" speed="25"/>
+    <edge id="junction_to_end" from="junction" to="end" numLanes="3" speed="25"/>
+    <edge id="end_to_junction" from="end" to="junction" numLanes="3" speed="25"/>
+    <edge id="junction_to_start" from="junction" to="start" numLanes="3" speed="25"/>
+</edges>

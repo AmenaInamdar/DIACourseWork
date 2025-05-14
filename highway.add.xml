@@ -1,0 +1,11 @@
+<additional>
+    <!-- Pedestrian crossing at junction -->
+    <crossing id="cross1" edges="start_to_junction" lane="start_to_junction_0"
+              startPos="50" endPos="55" priority="1" color="0,1,0" />
+
+    <!-- Traffic light-->
+    <tlLogic id="junction" type="static" programID="0" offset="0">
+        <phase duration="30" state="GGGrrr"/>
+        <phase duration="10" state="rrrGGG"/>
+    </tlLogic>
+</additional>
