@@ -1,0 +1,12 @@
+Episode 1, Reward: 171.69, Steps: 828, Epsilon: 0.0500
+Episode 2, Reward: -210.79, Steps: 368, Epsilon: 0.0500
+Episode 3, Reward: -215.02, Steps: 837, Epsilon: 0.0500
+Episode 4, Reward: -591.24, Steps: 570, Epsilon: 0.0500
+Episode 5, Reward: -4.34, Steps: 418, Epsilon: 0.0500
+Episode 6, Reward: 163.61, Steps: 335, Epsilon: 0.0500
+Episode 7, Reward: -323.94, Steps: 526, Epsilon: 0.0500
+Episode 8, Reward: 46.36, Steps: 349, Epsilon: 0.0500
+Episode 9, Reward: -314.96, Steps: 856, Epsilon: 0.0500
+Episode 10, Reward: -789.30, Steps: 685, Epsilon: 0.0500
+Episode 11, Reward: -1411.45, Steps: 877, Epsilon: 0.0500
+Episode 12, Reward: 2.62, Steps: 460, Epsilon: 0.0500
